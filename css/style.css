@@ -1,0 +1,120 @@
+body {
+     font-family: 'Montserrat', sans-serif;
+}
+
+.bg-danger {
+     background-color: #f53756 !important;
+}
+
+.bg-success {
+     background-color: #4cb8b3 !important;
+}
+
+.bg-warning {
+     background-color: #fef46d !important;
+}
+
+.bg-secondary {
+     background-color: #752f97 !important;
+}
+
+/* ! Main Video */
+.embed-responsive {
+     position: relative;
+     background-image: url(../img/rockband.jpg);
+     background-size: cover;
+     background-position: center center;
+     height: 50rem;
+}
+
+.embed-responsive::after {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     content: '';
+     top: 0;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+66,ffffff+100&0.8+0,0.5+100 */
+     background: -moz-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+     /* FF3.6-15 */
+     background: -webkit-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+     /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(135deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc891c1e', endColorstr='#80ffffff', GradientType=1);
+     /* IE6-9 fallback on horizontal gradient */
+}
+
+@media (min-width: 992px) {
+     .embed-responsive {
+          background-image: unset;
+          height: auto;
+     }
+}
+
+.festival-info {
+     position: absolute;
+     z-index: 100;
+     top: 20%;
+}
+
+.festival-info h1 {
+     font-size: 3rem;
+     line-height: 6rem;
+}
+
+@media (min-width: 768px) {
+     .festival-info {
+          top: 30%;
+     }
+
+     .festival-info h1 {
+          font-size: 4rem;
+          line-height: unset;
+     }
+}
+
+.festival-info h1 span,
+.festival-info p {
+     font-weight: 700;
+     -webkit-box-shadow: 0px 11px 20px -4px rgba(0, 0, 0, 0.62);
+     -moz-box-shadow: 0px 11px 20px -4px rgba(0, 0, 0, 0.62);
+     box-shadow: 0px 11px 20px -4px rgba(0, 0, 0, 0.62);
+}
+
+.festival-info p {
+     font-size: 2rem;
+}
+
+.festival-info .text-dark,
+.main-content .text-dark {
+     color: #f53756 !important;
+     font-weight: 700;
+}
+
+/* ! Lineup */
+.separator::after {
+     content: '';
+     display: block;
+     width: 300px;
+     height: 120px;
+     background-size: 120px;
+     background-position: center center;
+     background-repeat: no-repeat;
+     margin: 0 auto;
+}
+
+.rock::after {
+     background-image: url(../img/rock.png);
+}
+
+.dj::after {
+     background-image: url(../img/electronic.png);
+}
+
+.times.bg-warning li:nth-child(2n+1) {
+     background-color: #eae05b !important;
+}
+
+.times.bg-success li:nth-child(2n+1) {
+     background-color: #3ca8a2 !important;
+}
