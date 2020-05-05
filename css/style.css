@@ -118,3 +118,35 @@ body {
 .times.bg-success li:nth-child(2n+1) {
      background-color: #3ca8a2 !important;
 }
+
+/* ! Date */
+
+.date {
+     font-size: 2.8rem;
+}
+
+.date span {
+     font-weight: 700;
+}
+
+.date span::before {
+     content: '-';
+}
+
+.date span:first-child::before {
+     display: none;
+}
+
+/* ! Tickets */
+.tickets .price {
+     font-size: 2rem;
+}
+
+.tickets .active {
+     background-color: #752f97 !important;
+     border-color: #752f97 !important;
+}
+
+.list-group-item-success  {
+     background-color: #4cb8b3 !important;
+}
