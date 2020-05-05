@@ -18,13 +18,13 @@ body {
      background-color: #752f97 !important;
 }
 
-/* ! Main Nav */
+/** Main Nav **/
 #main-nav {
      transition: all .3s ease;
 }
 
 .fixed-top .nav-link {
-     color: white;
+     color: #ffffff;
 }
 
 .fixed-top.bg-success {
@@ -34,16 +34,28 @@ body {
 }
 
 .navbar-brand {
-     font-size: 1.8rem;
+     font-size: 1rem;
      font-weight: 400;
-     color: white !important;
+     color: #ffffff !important;
+     margin: 0 auto;
+}
+
+@media (min-width:768px) {
+     .navbar-brand {
+          font-size: 1.8rem;
+          margin: unset;
+     }
 }
 
 .navbar-brand span {
      font-weight: 700;
 }
 
-/* ! Main Video */
+.nav-link.active {
+     background-color: #752f97 !important;
+}
+
+/** Main Video **/
 .embed-responsive {
      position: relative;
      background-image: url(../img/rockband.jpg);
@@ -69,7 +81,7 @@ body {
      /* IE6-9 fallback on horizontal gradient */
 }
 
-@media (min-width: 992px) {
+@media (min-width:992px) {
      .embed-responsive {
           background-image: unset;
           height: auto;
@@ -83,11 +95,11 @@ body {
 }
 
 .festival-info h1 {
-     font-size: 3rem;
+     font-size: 2.2rem;
      line-height: 6rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
      .festival-info {
           top: 30%;
      }
@@ -116,7 +128,7 @@ body {
      font-weight: 700;
 }
 
-/* ! Lineup */
+/** Line up */
 .separator::after {
      content: '';
      display: block;
@@ -144,7 +156,16 @@ body {
      background-color: #3ca8a2 !important;
 }
 
-/* ! Date */
+/** Date **/
+.countdown h2 {
+     font-size: 1.6rem;
+}
+
+@media (min-width:768px) {
+     .countdown h2 {
+          font-size: 6rem;
+     }
+}
 
 .date {
      font-size: 2.8rem;
@@ -154,15 +175,25 @@ body {
      font-weight: 700;
 }
 
-.date span::before {
-     content: '-';
-}
-
 .date span:first-child::before {
      display: none;
 }
 
-/* ! Tickets */
+.date span::before {
+     content: '';
+     display: block;
+}
+
+@media (min-width:768px) {
+     .date span::before {
+          content: '-';
+          display: inline;
+     }
+}
+
+
+/** Tickets **/
+
 .tickets .price {
      font-size: 2rem;
 }
@@ -174,4 +205,10 @@ body {
 
 .list-group-item-success {
      background-color: #4cb8b3 !important;
+}
+
+@media (max-width:480px) {
+     .copyright {
+          font-size: .8rem;
+     }
 }
